@@ -307,6 +307,8 @@ nav ul li a:hover::after{
     font-size: 14px;
 }
 
+
+
 /* Projects */
 
   .card_container{    
@@ -377,7 +379,6 @@ nav ul li a:hover::after{
   .card__title {
     margin: 0;
     font-size: 30px;
-    color: #333;
     font-weight: 700;
   }
   
@@ -474,7 +475,7 @@ nav ul li a:hover::after{
   .social-card .social-link5:hover {
     background-color: #ff8000;
     animation: bounce_613 0.2s linear;
-  }
+  } 
   .social-card img{
     width: 30px;
   }
@@ -496,6 +497,8 @@ nav ul li a:hover::after{
       transform: scale(1);
     }
   }
+
+
 
   /* check monitor size Phone or Desktop */
 
