@@ -582,7 +582,8 @@ nav ul li a:hover::after{
       }
       .card_container{
         padding: 1rem; 
-        display: -webkit-box;
+        display: -webkit-box;        
+        gap: 77px;
     }
 
       .card-container {
