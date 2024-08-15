@@ -4,59 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenji Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
-<!-- header -->
-    <div class="header">
-        <div class="container">
-            <nav id="nav">  
-      
-                <div class="logo">Kenji Portfolio</div>
-              
-                <div>
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-            </div>
-            </nav>
-        
-            <nav id="phone-nav">
-                <div class="logo">Kenji Portfolio</div>
-                <div class="phone-menu">
-                    <div class="phone-icon" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="menu-links">
-                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                        <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
-                        <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
-                    </div>
-                </div>
-            </nav>
 
-            <div class="header-text">
-                <div class="section_text">
-                    <p class="section_text_p1">Hello, I'm Kenji,</p>
-                    <h1 class="title">
-                    <p class="section-text_p2">  
-                        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-                        <span
-                             class="txt-rotate"
-                             data-period="2000"
-                             data-rotate='[ "Frontend Web Developer", "Game Developer", "AR Developer" ]'>
-                         </span>
-                    </p></h1>
+    <div class="container" >
+        <nav>
+            <div class="nav__content">
+              <div class="logo"><a href="#">Kenji Portfolio</a></div>
+              <label for="check" class="checkbox" >
+                <i class="ri-menu-line"></i>
+              </label>
+              <input type="checkbox" name="check" id="check" />
+              <ul>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+              </ul>
             </div>
-        </div>
+          </nav>
     </div>
-
+    <div class="header-text">
+        <div class="section_text">
+            <p>Hello, I'm Kenji,</p>
+            <h1 class="title">
+            <p class="section-text_p2">  
+                <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+                <span
+                     class="txt-rotate"
+                     data-period="2000"
+                     data-rotate='[ "Frontend Web Developer", "Game Developer", "AR Developer" ]'>
+                 </span>
+            </p></h1>
+    </div></div>
 <!-- about -->
-    <div id="about">
+<section id="about">
         <p class="section-text_p1">Who Am I?</p>
         <h1 class="title">About Me</h1>
         <div class="container">
@@ -64,16 +49,12 @@
                 <div class="about-col-1">
                     <img src="Assest/PersonalPhoto.png" alt="">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2"  id="tab-text">
                     <p>I s p e c i a l i ze d in c re a t ing AR , w e b , and m ot i on-s ens ing g a m e s u s ing Uni t y 
                         and C # . My ro l e inc l u d e d d e ve l o p ing g a m e p ro g ra m s , w e b s i te s , and b a c kend s y s te m s w i th L a rave l PHP. I d e s i gne d u s e r inte r fa ce s , i m p l e m ente d 
                         g a m e e f fe c t s s u ch a s p a r t i c l e s y s te m s and g ra phi ca l e f fe c t s , and m ana g e d 
                         g a m e phy s i c s and ani m a t i ons . I a l s o s u p p o r te d ha rd wa re s e t u p , m ana g e d 
-                        d a t a cont ro l , and g ene ra te d s t a t i s t i ca l re p o r t s b a s e d on u s e r fe e d b a c k . 
-                        Co l l a b o ra t ing w i th va r i o u s te a m s , I ens u re d g a m e d e s i gns m e t eng a g e m ent 
-                        t a rg e t s and d rove the v i s i on and d e ve l o p m ent of g a m e s y s te m s . I a m e a g e r 
-                        to l e ve ra g e m y te ch ni ca l s k i l l s and p ro b l e m -s o l v ing a b i l i t i e s in b ro a d e r I T 
-                        o r g a m e d e ve l o p m ent ro l e s and e m b ra ce ne w cha l l eng e s </p>
+                        d a t a cont ro l , and g ene ra te d s t a t i s t i ca l re p o r t s b a s e d on u s e r fe e d b a c k . </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
@@ -111,140 +92,85 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 <!-- project -->
 <section id="projects">
-    <p class="section-text_p1">Discover My</p>
-    <h1 class="title">Projects</h1>
-    <div class="project-details-container">
-        <div class="about-containers">
-            <div class="flip-card-container" style="--hue: 220">
-                <div class="flip-card">
-              
-                  <div class="card-front">
-                    <figure>
-                      <div class="img-bg"></div>
-                      <img src="./Assest/Project1.jpg" alt="Brohm Lake">
-                      <figcaption>Motion ARPG Game</figcaption>
-                    </figure>
-              
-                    <ul>
-                      <li>Real-time Combat System</li>
-                      <li>Enemy AI Behavior</li>
-                      <li>UI Design and URP Lighting</li>
-                    </ul>
-                  </div>
-              
-                  <div class="card-back">
-                    <figure>
-                      <div class="img-bg"></div>
-                      <img src="./Assest/Project1.jpg" alt="Brohm Lake">
-                    </figure>
-              
-                    <button>Youtube</button>
-              
-                    <div class="design-container">
-                      <span class="design design--1"></span>
-                      <span class="design design--2"></span>
-                      <span class="design design--3"></span>
-                      <span class="design design--4"></span>
-                      <span class="design design--5"></span>
-                      <span class="design design--6"></span>
-                      <span class="design design--7"></span>
-                      <span class="design design--8"></span>
+    <div id="projects">
+        <p class="section-text_p1">Discover My</p>
+        <h1 class="title">Personal Projects</h1>
+        <div class="container">
+            <div class="card_container">
+                <div class="card">
+                    <img class="card__image" src="Assest/Project1.jpg" alt="">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                    <div class="card__content">
+                      <p class="card__title">3D RPG</p>
+                      <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                      <button class="card__button">Youtube</button>
+                      <button class="card__button secondary">Github</button>
                     </div>
                   </div>
-              
-                </div>
-              </div>
-              <!-- /flip-card-container -->
-              
-              <!-- flip-card-container -->
-              <div class="flip-card-container" style="--hue: 170">
-                <div class="flip-card">
-              
-                  <div class="card-front">
-                    <figure>
-                      <div class="img-bg"></div>
-                      <img src="./Assest/Project2.jpg" alt="Image 2">
-                      <figcaption>2.5D RGB Web Game</figcaption>
-                    </figure>
-              
-                    <ul>
-                      <li><br>2.5D RGB Web Game</li>
-                      <li>Detail 2</li>
-                    </ul>
-                  </div>
-              
-                  <div class="card-back">
-                    <figure>
-                      <div class="img-bg"></div>
-                      <img src="./Assest/Project2.jpg" alt="image-2">
-                    </figure>
-              
-                    <button>Youtube</button>
-                    <button>GamePlay</button>
-              
-                    <div class="design-container">
-                      <span class="design design--1"></span>
-                      <span class="design design--2"></span>
-                      <span class="design design--3"></span>
-                      <span class="design design--4"></span>
-                      <span class="design design--5"></span>
-                      <span class="design design--6"></span>
-                      <span class="design design--7"></span>
-                      <span class="design design--8"></span>
+                  <div class="card">
+                      <img class="card__image" src="Assest/Project1.jpg" alt="">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                      <div class="card__content">
+                        <p class="card__title">2.5D RPG</p>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <button class="card__button">Youtube</button>
+                        <button class="card__button secondary">Github</button>
+                      </div>
                     </div>
-                  </div>
-              
+                    <div class="card">
+                        <img class="card__image" src="Assest/Project1.jpg" alt="">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                        <div class="card__content">
+                          <p class="card__title">AR RPG</p>
+                          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                          <button class="card__button">Youtube</button>
+                          <button class="card__button secondary">Github</button>
+                        </div>
+                      </div>
+            </div>
+            
+        </div>
+        </div>
+</section>
+
+
+<!-- contact -->
+<section id="contact">
+    <div id="contact">
+        <p class="section-text_p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="container">
+            <div class="social-container">
+            <div class="social-card">
+                <a class="social-link1" href="kin.ma9225@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.56 8.47a8 8 0 0 0-7-7 64.29 64.29 0 0 0-15.06 0 8 8 0 0 0-7 7 64.29 64.29 0 0 0 0 15.06 8 8 0 0 0 7 7 64.29 64.29 0 0 0 15.06 0 8 8 0 0 0 7-7 64.29 64.29 0 0 0 0-15.06zm-8.69 8 6.76-7.09a63.05 63.05 0 0 1 0 13zM8.7 3.42a63.65 63.65 0 0 1 14.6 0A6 6 0 0 1 28.1 7l-9.53 10h-5.14L3.9 7a6 6 0 0 1 4.8-3.58zm-5.36 19a63.05 63.05 0 0 1 0-13l6.76 7.09zm20 6.21a63.65 63.65 0 0 1-14.6 0 6 6 0 0 1-4.94-3.92l7.75-6.78.77.81A1 1 0 0 0 13 19h6a1 1 0 0 0 .72-.31l.77-.81 7.75 6.78a6 6 0 0 1-4.94 3.92z" data-name="email android app aplication phone"/></svg>
+                </a>
+                <a class="social-link2" href="https://github.com/Kenji966">
+                  <svg viewBox="0 0 496 512" height="1em" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                    </path>
+                  </svg> </a>
+                <a class="social-link3" href="https://www.linkedin.com/in/wai-kin-ma-201a89299/">
+                    <svg fill="#fff" viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                        </path>
+                      </svg> 
+                </a>
+                <a class="social-link4" href="https://www.youtube.com/playlist?list=PLwvOxYFa03hHu4-RWtL5f8YgZgm93zDy8">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+                        </svg> </a>
+                <a class="social-link5" href="Assest/Resume.Pdf">
+                 <img src="Assest/Curriculum Vitae.svg" alt=""> 
                 </div>
-              </div>
-              <!-- /flip-card-container -->
-              
-              <!-- flip-card-container -->
-              <div class="flip-card-container" style="--hue: 350">
-                <div class="flip-card">
-              
-                  <div class="card-front">
-                    <figure>
-                      <div class="img-bg"></div>
-                      <img src="./Assest/Project1.jpg" alt="AR Learning Game">
-                      <figcaption>AR Learning Game</figcaption>
-                    </figure>
-              
-                    <ul>
-                      <li><br>2.5D RGB Web Game</li>
-                      <li>Detail 2</li>
-                    </ul>
-                  </div>
-              
-                  <div class="card-back">
-                    <!-- only if the image is necessary -->
-                    <figure>
-                      <div class="img-bg"></div>
-                      <img src="./Assest/Project1.jpg" alt="Brohm Lake">
-                    </figure>
-              
-                    <button>Youtube</button>
-              
-                    <!-- can add svg here and remove these eight spans -->
-                    <div class="design-container">
-                      <span class="design design--1"></span>
-                      <span class="design design--2"></span>
-                      <span class="design design--3"></span>
-                      <span class="design design--4"></span>
-                      <span class="design design--5"></span>
-                      <span class="design design--6"></span>
-                      <span class="design design--7"></span>
-                      <span class="design design--8"></span>
-                    </div>
-                  </div>
-              
-                </div>
-              </div>
+            </div>
+           </div>
+        </div>
     </div>
-</div>
 </section>
 
 

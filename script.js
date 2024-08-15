@@ -1,21 +1,28 @@
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', () => {
+      // 取消复选框选中状态
+      document.getElementById('check').checked = false;
 
-function opentab(tabname)
+      // 重置按钮的状态，确保下次可以正常使用
+      document.getElementById('check').checked = false;
+
+  });
+});
+
+function openProj(tabname)
 {
-    for(let tablink of tablinks)
+    for(let prolink of projlinks)
     {
-        tablink.classList.remove("active-link");
+        prolink.classList.remove("active-proj");
     }
-    for(let tabcontent of tabcontents)
+    for(let projcontent of projcontents)
     {
-        tabcontent.classList.remove("active-tab");
+        projcontent.classList.remove("active-projs");
     }
 
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
+    event.currentTarget.classList.add("active-proj");
+    document.getElementById(tabname).classList.add("active-projs");
 }
-
 
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -73,4 +80,5 @@ var TxtRotate = function(el, toRotate, period) {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+
   
