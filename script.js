@@ -8,22 +8,25 @@ document.querySelectorAll('.nav-item').forEach(item => {
 
   });
 });
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
 
-function openProj(tabname)
-{
-    for(let prolink of projlinks)
-    {
-        prolink.classList.remove("active-proj");
-    }
-    for(let projcontent of projcontents)
-    {
-        projcontent.classList.remove("active-projs");
-    }
 
-    event.currentTarget.classList.add("active-proj");
-    document.getElementById(tabname).classList.add("active-projs");
-}
+       function opentab(tabname)
+       {
+       for(let tablink of tablinks)
+       {
+           tablink.classList.remove("active-link");
+       }
+       for(let tabcontent of tabcontents)
+       {
+           tabcontent.classList.remove("active-tab");
+       }
 
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+   }
+   
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
