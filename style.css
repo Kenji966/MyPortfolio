@@ -399,6 +399,7 @@ nav ul li a:hover::after{
   .card__title {
     margin: 0;
     font-size: 30px;
+    -webkit-text-stroke: .85px #080808;
     font-weight: 700;   
     margin-left: -53px;
   }
@@ -407,12 +408,17 @@ nav ul li a:hover::after{
     scale: 0;
   }
   
+  .card__description2,
   .card__description {
     margin: 42px -55px 42px;
-    font-size: 12px;
+    font-size: 15px;
+    -webkit-text-stroke: .15px #080808;
     line-height: 1.4;    
     margin-top: 220px;
+  }
 
+  .card__description2{
+    color: #080808;
   }
   
   .proj_btn{ 
